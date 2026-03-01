@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartments Kompara - Lokavec, Vipava Valley</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-header">
+      <div class="hero-overlay">
+        <h1 class="hero-title">Apartments Kompara</h1>
+        <p class="hero-subtitle">
+          Your peaceful retreat in the heart of Vipava Valley
+        </p>
+      </div>
+
+      <!-- Language selector with FLAGS -->
+      <div class="language-selector">
+        <div class="language-dropdown" id="languageDropdown">
+          <div class="language-selected" onclick="toggleLanguageDropdown()">
+            <span id="selectedLang">🇬🇧 ENG</span>
+            <svg
+              class="dropdown-arrow"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+            >
+              <path
+                d="M1 1L6 6L11 1"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="language-options" id="languageOptions">
+            <div class="language-option" onclick="changeLanguage('en')">
+              🇬🇧 ENG
+            </div>
+            <div class="language-option" onclick="changeLanguage('sl')">
+              🇸🇮 SLO
+            </div>
+            <div class="language-option" onclick="changeLanguage('de')">
+              🇩🇪 GER
+            </div>
+            <div class="language-option" onclick="changeLanguage('it')">
+              🇮🇹 ITA
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <nav>
+        <ul>
+          <li><a href="#gallery" data-translate="nav-gallery">Gallery</a></li>
+          <li><a href="#about" data-translate="nav-about">About</a></li>
+          <li>
+            <a href="#attractions" data-translate="nav-attractions"
+              >Attractions</a
+            >
+          </li>
+          <li>
+            <a href="#accessibility" data-translate="nav-accessibility"
+              >Accessibility</a
+            >
+          </li>
+          <li><a href="#pricing" data-translate="nav-pricing">Pricing</a></li>
+          <li><a href="#contact" data-translate="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="gallery">
+        <div class="container">
+          <h2 data-translate="gallery-title">Photo Gallery</h2>
+          <div class="gallery">
+            <div class="gallery-item" onclick="openModal(this)">
+              <div class="placeholder-img" data-translate="gallery-interior">
+                Interior View
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+              <div class="placeholder-img" data-translate="gallery-living">
+                Living Room
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+              <div class="placeholder-img" data-translate="gallery-bedroom">
+                Bedroom
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+              <div class="placeholder-img" data-translate="gallery-kitchen">
+                Kitchen
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+              <div class="placeholder-img" data-translate="gallery-view">
+                Vipava Valley View
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+              <div class="placeholder-img" data-translate="gallery-area">
+                Surrounding Area
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2 data-translate="about-title">About the Apartment</h2>
+          <div class="about-content">
+            <p data-translate="about-intro">
+              Welcome to our charming apartment located in the picturesque
+              village of Lokavec, near Ajdovščina in the stunning Vipava Valley.
+              This cozy retreat offers the perfect escape for those seeking
+              tranquility and natural beauty.
+            </p>
+
+            <div class="highlight">
+              <strong data-translate="about-why-title"
+                >Why Choose Lokavec?</strong
+              ><br />
+              <span data-translate="about-why-text">
+                Nestled in the heart of Slovenia's wine country, Lokavec offers
+                breathtaking views of the valley, easy access to hiking trails,
+                and proximity to charming local wineries. The area is known for
+                its mild climate, excellent wines, and warm hospitality.
+              </span>
+            </div>
+
+            <p>
+              <strong data-translate="about-features-title"
+                >Apartment Features:</strong
+              >
+            </p>
+            <ul class="features-list">
+              <li data-translate="feature-kitchen">
+                Fully equipped kitchen with modern appliances
+              </li>
+              <li data-translate="feature-living">
+                Comfortable living area with valley views
+              </li>
+              <li data-translate="feature-bedroom">
+                Cozy bedroom with quality bedding
+              </li>
+              <li data-translate="feature-bathroom">Modern bathroom</li>
+              <li data-translate="feature-wifi">Free Wi-Fi and parking</li>
+              <li data-translate="feature-outdoor">Outdoor seating area</li>
+            </ul>
+
+            <p class="about-ideal" data-translate="about-ideal">
+              The apartment is ideal for couples or small families looking to
+              explore the Vipava Valley, enjoy outdoor activities, or simply
+              relax in a peaceful setting away from the hustle and bustle of
+              city life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="attractions">
+        <div class="container">
+          <h2 data-translate="attractions-title">Points of Interest</h2>
+          <div class="poi-grid">
+            <div class="poi-card">
+              <h3 data-translate="poi-ajdovscina-title">Ajdovščina Town</h3>
+              <p class="distance" data-translate="poi-ajdovscina-distance">
+                5 km away
+              </p>
+              <p data-translate="poi-ajdovscina-desc">
+                Historic town with Roman walls, local markets, and traditional
+                restaurants. Explore the ancient Castra fortress ruins and enjoy
+                authentic Slovenian cuisine.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-wineries-title">
+                Vipava Valley Wineries
+              </h3>
+              <p class="distance" data-translate="poi-wineries-distance">
+                Various locations nearby
+              </p>
+              <p data-translate="poi-wineries-desc">
+                Discover world-class wines in the numerous wineries scattered
+                throughout the valley. The region is famous for its indigenous
+                grape varieties and wine tourism.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-hiking-title">Hiking & Cycling Trails</h3>
+              <p class="distance" data-translate="poi-hiking-distance">
+                Starting from Lokavec
+              </p>
+              <p data-translate="poi-hiking-desc">
+                Access beautiful trails through vineyards, forests, and hills.
+                The Upper Vipava Valley offers routes for all skill levels with
+                stunning panoramic views.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-otlica-title">Otlica Window</h3>
+              <p class="distance" data-translate="poi-otlica-distance">
+                15 km away
+              </p>
+              <p data-translate="poi-otlica-desc">
+                A natural rock window offering spectacular views over the Vipava
+                Valley. Popular destination for hikers and photographers.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-brda-title">Goriška Brda</h3>
+              <p class="distance" data-translate="poi-brda-distance">
+                30 km away
+              </p>
+              <p data-translate="poi-brda-desc">
+                Slovenia's Tuscany - rolling hills covered with vineyards and
+                orchards. Perfect for day trips, wine tasting, and scenic
+                drives.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-ljubljana-title">Ljubljana</h3>
+              <p class="distance" data-translate="poi-ljubljana-distance">
+                70 km away
+              </p>
+              <p data-translate="poi-ljubljana-desc">
+                Slovenia's charming capital city with its picturesque old town,
+                castle, and vibrant cultural scene. Easy day trip destination.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="accessibility">
+        <div class="container">
+          <h2 data-translate="accessibility-title">How to Get Here</h2>
+          <div class="poi-grid">
+            <div class="poi-card">
+              <h3 data-translate="poi-trieste-title">
+                ✈️ Trieste Airport (TRS)
+              </h3>
+              <p class="distance" data-translate="poi-trieste-distance">
+                45 km away
+              </p>
+              <p data-translate="poi-trieste-desc">
+                Closest international airport in Italy. Convenient access with
+                approximately 40 minutes drive, offering connections to major
+                European cities.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-ljubljana-airport-title">
+                ✈️ Ljubljana Airport (LJU)
+              </h3>
+              <p
+                class="distance"
+                data-translate="poi-ljubljana-airport-distance"
+              >
+                85 km away
+              </p>
+              <p data-translate="poi-ljubljana-airport-desc">
+                Slovenia's main international airport. Approximately 1 hour
+                drive, serving numerous European destinations with convenient
+                connections.
+              </p>
+            </div>
+
+            <div class="poi-card">
+              <h3 data-translate="poi-venice-title">✈️ Venice Airport (VCE)</h3>
+              <p class="distance" data-translate="poi-venice-distance">
+                150 km away
+              </p>
+              <p data-translate="poi-venice-desc">
+                Marco Polo International Airport. About 1.5 hours drive,
+                offering extensive international flight connections from a major
+                Italian hub.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="container">
+          <h2 data-translate="pricing-title">Pricing</h2>
+          <div class="pricing-container">
+            <div class="price-box">
+              <div class="price">€XX</div>
+              <div class="price-label" data-translate="pricing-per-night">
+                per night
+              </div>
+            </div>
+            <p class="pricing-note" data-translate="pricing-note1">
+              Please contact us for seasonal rates, weekly discounts, and
+              special offers.
+            </p>
+            <p class="pricing-note" data-translate="pricing-note2">
+              Minimum stay: 2 nights | Check-in: 3 PM | Check-out: 10 AM
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2 data-translate="contact-title">Contact & Inquiry</h2>
+          <div class="contact-form">
+            <!-- <div
+              class="success-message"
+              id="successMessage"
+              data-translate="contact-success"
+            >
+              Thank you for your inquiry! We'll get back to you soon.
+            </div>
+            <form id="inquiryForm">
+              <div class="form-group">
+                <label for="name" data-translate="form-name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-translate="form-email"
+                  >Email Address *</label
+                >
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="checkin" data-translate="form-checkin"
+                  >Check-in Date *</label
+                >
+                <input type="date" id="checkin" name="checkin" required />
+              </div>
+
+              <div class="form-group">
+                <label for="checkout" data-translate="form-checkout"
+                  >Check-out Date *</label
+                >
+                <input type="date" id="checkout" name="checkout" required />
+              </div>
+
+              <div class="form-group">
+                <label for="guests" data-translate="form-guests"
+                  >Number of Guests</label
+                >
+                <select id="guests" name="guests">
+                  <option value="1" data-translate="form-guest-1">
+                    1 Guest
+                  </option>
+                  <option value="2" selected data-translate="form-guest-2">
+                    2 Guests
+                  </option>
+                  <option value="3" data-translate="form-guest-3">
+                    3 Guests
+                  </option>
+                  <option value="4" data-translate="form-guest-4">
+                    4 Guests
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-translate="form-message"
+                  >Message / Special Requests</label
+                >
+                <textarea id="message" name="message"></textarea>
+              </div>
+
+              <button type="submit" data-translate="form-submit">
+                Send Inquiry
+              </button>
+            </form> -->
+
+            <div class="contact-info">
+              <p>📧 Email: apartments.kompara@gmail.com</p>
+              <p>
+                📍 <span data-translate="contact-location">Location</span>:
+                Lokavec, 5270 Ajdovščina, Slovenia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <p data-translate="footer-copy">
+            © 2025 Apartments Kompara. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
