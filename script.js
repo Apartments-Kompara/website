@@ -22,15 +22,14 @@ const translations = {
         "about-why-text": "Nestled in the heart of Slovenia's wine country, Lokavec offers breathtaking views of the valley, easy access to hiking trails, and proximity to charming local wineries. The area is known for its mild climate, excellent wines, and warm hospitality.",
         "about-features-title": "Apartment Features:",
         "feature-kitchen": "Fully equipped kitchen with modern appliances",
-        "feature-living": "Comfortable living area with valley views",
+        "feature-living": "Comfortable living area",
         "feature-bedroom": "Cozy bedroom with quality bedding",
         "feature-bathroom": "Modern bathroom",
         "feature-wifi": "Free Wi-Fi and parking",
-        "feature-outdoor": "Outdoor seating area",
         "about-ideal": "The apartment is ideal for couples or small families looking to explore the Vipava Valley, enjoy outdoor activities, or simply relax in a peaceful setting away from the hustle and bustle of city life.",
         "attractions-title": "Points of Interest",
         "poi-ajdovscina-title": "Ajdovščina Town",
-        "poi-ajdovscina-distance": "5 km away",
+        "poi-ajdovscina-distance": "2 km away",
         "poi-ajdovscina-desc": "Historic town with Roman walls, local markets, and traditional restaurants. Explore the ancient Castra fortress ruins and enjoy authentic Slovenian cuisine.",
         "poi-wineries-title": "Vipava Valley Wineries",
         "poi-wineries-distance": "Various locations nearby",
@@ -75,7 +74,7 @@ const translations = {
         "form-message": "Message / Special Requests",
         "form-submit": "Send Inquiry",
         "contact-location": "Location",
-        "footer-copy": "© 2025 Apartments Kompara. All rights reserved."
+        "footer-copy": "© 2025 - 2026 Apartments Kompara. All rights reserved."
     },
     sl: {
         "header-title": "Apartmaji Kompara",
@@ -99,15 +98,14 @@ const translations = {
         "about-why-text": "Lokavec, ki se nahaja v srcu slovenske vinske dežele, ponuja osupljive razglede na dolino, lahek dostop do pohodniških poti in bližino čudovitih lokalnih vinarjev. Območje je znano po milih podnebnih razmerah, odličnih vinih in topli gostoljubnosti.",
         "about-features-title": "Značilnosti apartmaja:",
         "feature-kitchen": "Popolnoma opremljena kuhinja s sodobnimi aparati",
-        "feature-living": "Udoben dnevni prostor s pogledom na dolino",
+        "feature-living": "Udoben dnevni prostor",
         "feature-bedroom": "Prijetna spalnica s kakovostno posteljnino",
         "feature-bathroom": "Moderna kopalnica",
         "feature-wifi": "Brezplačen Wi-Fi in parkiranje",
-        "feature-outdoor": "Zunanji sedežni prostor",
         "about-ideal": "Apartma je idealen za pare ali majhne družine, ki želijo raziskovati Vipavsko dolino, uživati v aktivnostih na prostem ali se preprosto sprostiti v mirnem okolju, stran od mestnega vrveža.",
         "attractions-title": "Zanimivosti v okolici",
         "poi-ajdovscina-title": "Mesto Ajdovščina",
-        "poi-ajdovscina-distance": "5 km stran",
+        "poi-ajdovscina-distance": "2 km stran",
         "poi-ajdovscina-desc": "Zgodovinsko mesto z rimskimi zidovi, lokalnimi tržnicami in tradicionalnimi restavracijami. Raziščite ruševine starodavne trdnjave Castra in uživajte v pristni slovenski kuhinji.",
         "poi-wineries-title": "Vipavske vinarije",
         "poi-wineries-distance": "Različne lokacije v bližini",
@@ -152,7 +150,7 @@ const translations = {
         "form-message": "Sporočilo / Posebne želje",
         "form-submit": "Pošlji povpraševanje",
         "contact-location": "Lokacija",
-        "footer-copy": "© 2025 Apartmaji Kompara. Vse pravice pridržane."
+        "footer-copy": "© 2025 - 2026 Apartmaji Kompara. Vse pravice pridržane."
     },
     de: {
         "header-title": "Apartments Kompara",
@@ -176,15 +174,14 @@ const translations = {
         "about-why-text": "Im Herzen des slowenischen Weinlandes gelegen, bietet Lokavec atemberaubende Ausblicke auf das Tal, einfachen Zugang zu Wanderwegen und die Nähe zu charmanten lokalen Weingütern. Die Gegend ist bekannt für ihr mildes Klima, ausgezeichnete Weine und herzliche Gastfreundschaft.",
         "about-features-title": "Apartment-Ausstattung:",
         "feature-kitchen": "Voll ausgestattete Küche mit modernen Geräten",
-        "feature-living": "Gemütlicher Wohnbereich mit Talblick",
+        "feature-living": "Gemütlicher Wohnbereich",
         "feature-bedroom": "Behagliches Schlafzimmer mit hochwertiger Bettwäsche",
         "feature-bathroom": "Modernes Badezimmer",
         "feature-wifi": "Kostenloses WLAN und Parkplatz",
-        "feature-outdoor": "Außensitzbereich",
         "about-ideal": "Das Apartment ist ideal für Paare oder kleine Familien, die das Vipava-Tal erkunden, Outdoor-Aktivitäten genießen oder einfach in einer ruhigen Umgebung fernab vom Trubel des Stadtlebens entspannen möchten.",
         "attractions-title": "Sehenswürdigkeiten",
         "poi-ajdovscina-title": "Stadt Ajdovščina",
-        "poi-ajdovscina-distance": "5 km entfernt",
+        "poi-ajdovscina-distance": "2 km entfernt",
         "poi-ajdovscina-desc": "Historische Stadt mit römischen Mauern, lokalen Märkten und traditionellen Restaurants. Erkunden Sie die antiken Ruinen der Castra-Festung und genießen Sie authentische slowenische Küche.",
         "poi-wineries-title": "Weingüter im Vipava-Tal",
         "poi-wineries-distance": "Verschiedene Standorte in der Nähe",
@@ -229,7 +226,7 @@ const translations = {
         "form-message": "Nachricht / Besondere Wünsche",
         "form-submit": "Anfrage senden",
         "contact-location": "Standort",
-        "footer-copy": "© 2025 Apartments Kompara. Alle Rechte vorbehalten."
+        "footer-copy": "© 2025 - 2026 Apartments Kompara. Alle Rechte vorbehalten."
     },
     it: {
         "header-title": "Apartments Kompara",
@@ -253,15 +250,14 @@ const translations = {
         "about-why-text": "Situato nel cuore della regione vinicola slovena, Lokavec offre viste mozzafiato sulla valle, facile accesso ai sentieri escursionistici e vicinanza a incantevoli cantine locali. La zona è nota per il suo clima mite, vini eccellenti e calorosa ospitalità.",
         "about-features-title": "Caratteristiche dell'appartamento:",
         "feature-kitchen": "Cucina completamente attrezzata con elettrodomestici moderni",
-        "feature-living": "Zona soggiorno confortevole con vista sulla valle",
+        "feature-living": "Zona soggiorno confortevole",
         "feature-bedroom": "Camera da letto accogliente con biancheria di qualità",
         "feature-bathroom": "Bagno moderno",
         "feature-wifi": "Wi-Fi gratuito e parcheggio",
-        "feature-outdoor": "Area salotto esterna",
         "about-ideal": "L'appartamento è ideale per coppie o piccole famiglie che desiderano esplorare la Valle di Vipava, godere di attività all'aperto o semplicemente rilassarsi in un ambiente tranquillo lontano dal trambusto della vita cittadina.",
         "attractions-title": "Punti di interesse",
         "poi-ajdovscina-title": "Città di Ajdovščina",
-        "poi-ajdovscina-distance": "5 km di distanza",
+        "poi-ajdovscina-distance": "2 km di distanza",
         "poi-ajdovscina-desc": "Città storica con mura romane, mercati locali e ristoranti tradizionali. Esplorate le antiche rovine della fortezza di Castra e gustate l'autentica cucina slovena.",
         "poi-wineries-title": "Cantine della Valle di Vipava",
         "poi-wineries-distance": "Varie località nelle vicinanze",
@@ -306,7 +302,7 @@ const translations = {
         "form-message": "Messaggio / Richieste speciali",
         "form-submit": "Invia richiesta",
         "contact-location": "Posizione",
-        "footer-copy": "© 2025 Apartments Kompara. Tutti i diritti riservati."
+        "footer-copy": "© 2025 - 2026 Apartments Kompara. Tutti i diritti riservati."
     }
 };
 
@@ -434,7 +430,11 @@ window.addEventListener('DOMContentLoaded', () => {
 // Modal functions
 function openModal(element) {
     const modal = document.getElementById('imageModal');
-    if (modal) {
+    const modalImg = document.getElementById('modalImage');
+    const img = element.querySelector('img');
+
+    if (modal && modalImg && img) {
+        modalImg.src = img.src;
         modal.style.display = 'block';
     }
 }

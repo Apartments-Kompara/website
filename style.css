@@ -481,6 +481,16 @@ button[type="submit"]:hover {
     font-size: 1.1rem;
 }
 
+.contact-info a {
+    color: #2c7a7b;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: #2f855a;
+}
+
 /* Footer */
 footer {
     background-color: #2c5282;
