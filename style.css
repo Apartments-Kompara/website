@@ -449,6 +449,14 @@ h2 {
     letter-spacing: 0.05em;
 }
 
+.price-subnote {
+    margin-top: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    max-width: 320px;
+}
+
 .pricing-note {
     margin-top: 2rem;
     color: #64748b;
@@ -582,6 +590,33 @@ footer {
     border-radius: 12px;
 }
 
+.modal-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+    z-index: 1001;
+}
+
+.modal-arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-arrow-left {
+    left: 20px;
+}
+
+.modal-arrow-right {
+    right: 20px;
+}
+
 .close {
     position: absolute;
     top: 20px;
@@ -684,6 +719,13 @@ footer {
         padding: 2rem;
         margin-top: 2rem;
     }
+
+    .modal-arrow {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+    }
+    .modal-arrow-left { left: 10px; }
+    .modal-arrow-right { right: 10px; }
 }
 
 @media (max-width: 480px) {

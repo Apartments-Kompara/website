@@ -63,6 +63,7 @@ const translations = {
         "link-calendar-desc": "A live events calendar covering Nova Gorica and the Vipava Valley region, updated regularly with upcoming local events.",
         "pricing-title": "Pricing",
         "pricing-per-night": "per night",
+        "pricing-subnote": "The price is valid for 2 people. For an additional adult or two children, the price increases by €10.",
         "pricing-note1": "Please contact us for seasonal rates, weekly discounts, and special offers.",
         "pricing-note2": "Minimum stay: 2 nights | Check-in: 3 PM | Check-out: 11 AM",
         "contact-title": "Contact & Inquiry",
@@ -144,6 +145,7 @@ const translations = {
         "link-calendar-desc": "Živi koledar dogodkov za Novo Gorico in Vipavsko dolino, redno posodobljen z nadihajočimi lokalnimi dogodki.",
         "pricing-title": "Cenik",
         "pricing-per-night": "na noč",
+        "pricing-subnote": "Cena velja za 2 osebi. Za dodatno odraslo osebo ali dva otroka se cena zviša za 10 €.",
         "pricing-note1": "Za sezonske cene, tedenske popuste in posebne ponudbe nas prosimo kontaktirajte.",
         "pricing-note2": "Minimalno bivanje: 2 noči | Prijava: 15.00 h | Odjava: 11.00 h",
         "contact-title": "Kontakt in povpraševanje",
@@ -225,6 +227,7 @@ const translations = {
         "link-calendar-desc": "Ein aktueller Veranstaltungskalender für Nova Gorica und das Vipava-Tal, regelmäßig mit kommenden lokalen Events aktualisiert.",
         "pricing-title": "Preise",
         "pricing-per-night": "pro Nacht",
+        "pricing-subnote": "Der Preis gilt für 2 Personen. Für einen weiteren Erwachsenen oder zwei Kinder erhöht sich der Preis um 10 €.",
         "pricing-note1": "Bitte kontaktieren Sie uns für Saisonpreise, Wochenrabatte und Sonderangebote.",
         "pricing-note2": "Mindestaufenthalt: 2 Nächte | Check-in: 15 Uhr | Check-out: 11 Uhr",
         "contact-title": "Kontakt & Anfrage",
@@ -306,6 +309,7 @@ const translations = {
         "link-calendar-desc": "Un calendario eventi aggiornato che copre Nova Gorica e la Valle di Vipava, aggiornato regolarmente con i prossimi eventi locali.",
         "pricing-title": "Prezzi",
         "pricing-per-night": "a notte",
+        "pricing-subnote": "Il prezzo è valido per 2 persone. Per ogni adulto aggiuntivo o due bambini, il prezzo aumenta di 10 €.",
         "pricing-note1": "Vi preghiamo di contattarci per tariffe stagionali, sconti settimanali e offerte speciali.",
         "pricing-note2": "Soggiorno minimo: 2 notti | Check-in: ore 15 | Check-out: ore 11",
         "contact-title": "Contatti e richiesta",
@@ -447,28 +451,51 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Modal functions
-function openModal(element) {
+const galleryImages = [
+    'images/living_room1.jpg',
+    'images/living_room2.jpg',
+    'images/dinning_room.jpg',
+    'images/kitchen.jpg',
+    'images/second_floor.jpg',
+    'images/bedroom1.jpg',
+    'images/bedroom2.jpg',
+    'images/bathroom1.jpg',
+    'images/bathroom2.jpg',
+    'images/outside1.jpg',
+    'images/outside2.jpg'
+];
+
+let currentImageIndex = 0;
+
+// Modal function
+function openModal(index) {
+    currentImageIndex = index;
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
-    const img = element.querySelector('img');
+    modalImg.src = galleryImages[currentImageIndex];
+    modal.style.display = 'block';
+}
 
-    if (modal && modalImg && img) {
-        modalImg.src = img.src;
-        modal.style.display = 'block';
-    }
+function changeImage(direction) {
+    currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+    document.getElementById('modalImage').src = galleryImages[currentImageIndex];
 }
 
 function closeModal() {
     const modal = document.getElementById('imageModal');
-    if (modal) {
-        modal.style.display = 'none';
-    }
+    if (modal) modal.style.display = 'none';
 }
+
+document.addEventListener('keydown', function (e) {
+    const modal = document.getElementById('imageModal');
+    if (modal.style.display === 'block') {
+        if (e.key === 'ArrowLeft') changeImage(-1);
+        if (e.key === 'ArrowRight') changeImage(1);
+        if (e.key === 'Escape') closeModal();
+    }
+});
 
 window.onclick = function (event) {
     const modal = document.getElementById('imageModal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
+    if (event.target === modal) modal.style.display = 'none';
 };

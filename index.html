@@ -77,55 +77,55 @@
         <div class="container">
           <h2 data-translate="gallery-title">Photo Gallery</h2>
           <div class="gallery">
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(0)">
               <img
                 src="images/living_room1.jpg"
                 alt="Apartment Kompara living room"
               />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(1)">
               <img
                 src="images/living_room2.jpg"
                 alt="Apartment Kompara living room"
               />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(2)">
               <img
                 src="images/dinning_room.jpg"
                 alt="Apartment Kompara dining room"
               />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(3)">
               <img src="images/kitchen.jpg" alt="Apartment Kompara kitchen" />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(4)">
               <img
                 src="images/second_floor.jpg"
                 alt="Apartment Kompara second floor"
               />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(5)">
               <img src="images/bedroom1.jpg" alt="Apartment Kompara bedroom" />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(6)">
               <img src="images/bedroom2.jpg" alt="Apartment Kompara bedroom" />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(7)">
               <img
                 src="images/bathroom1.jpg"
                 alt="Apartment Kompara bathroom"
               />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(8)">
               <img
                 src="images/bathroom2.jpg"
                 alt="Apartment Kompara bathroom"
               />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(9)">
               <img src="images/outside1.jpg" alt="Apartment Kompara outside" />
             </div>
-            <div class="gallery-item" onclick="openModal(this)">
+            <div class="gallery-item" onclick="openModal(10)">
               <img src="images/outside2.jpg" alt="Apartment Kompara outside" />
             </div>
           </div>
@@ -357,9 +357,13 @@
           <h2 data-translate="pricing-title">Pricing</h2>
           <div class="pricing-container">
             <div class="price-box">
-              <div class="price">100 €</div>
+              <div class="price">90 €</div>
               <div class="price-label" data-translate="pricing-per-night">
                 per night
+              </div>
+              <div class="price-subnote" data-translate="pricing-subnote">
+                The price is valid for 2 people. For an additional adult or two
+                children, the price increases by €10.
               </div>
             </div>
             <p class="pricing-note" data-translate="pricing-note1">
@@ -471,7 +475,21 @@
 
     <div id="imageModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button
+        class="modal-arrow modal-arrow-left"
+        onclick="changeImage(-1)"
+        aria-label="Previous image"
+      >
+        &#10094;
+      </button>
       <img class="modal-content" id="modalImage" />
+      <button
+        class="modal-arrow modal-arrow-right"
+        onclick="changeImage(1)"
+        aria-label="Next image"
+      >
+        &#10095;
+      </button>
     </div>
 
     <script src="script.js"></script>
