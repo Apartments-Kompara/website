@@ -440,6 +440,12 @@ h2 {
     letter-spacing: -0.02em;
 }
 
+.price-text {
+    font-size: 2rem;
+    line-height: 1.2;
+    max-width: 320px;
+}
+
 .price-label {
     font-size: 1.2rem;
     opacity: 0.95;
@@ -713,6 +719,10 @@ footer {
 
     .price {
         font-size: 2.8rem;
+    }
+
+    .price-text {
+        font-size: 1.6rem;
     }
 
     .contact-form {
